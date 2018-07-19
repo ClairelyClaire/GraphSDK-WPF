@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GraphSDK_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="625" Width="1050">
     <Grid>
-        
+        <Button x:Name="cmdAzureLogin" Content="Login to Azure App" HorizontalAlignment="Left" Margin="20,19,0,0" VerticalAlignment="Top" Width="133" Click="cmdAzureLogin_Click"/>
+        <Button x:Name="cmdDevLogin" Content="Login to Consumer App" HorizontalAlignment="Left" Margin="162,19,0,0" VerticalAlignment="Top" Width="137" Click="cmdDevLogin_Click"/>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="500" Margin="20,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="1000"/>
+        <Label x:Name="lblResult" Content="Result:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,54,0,0" Padding="0" Width="137"/>
+
     </Grid>
 </Window>
